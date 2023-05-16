@@ -7,9 +7,9 @@ ext.app_version = app_version
 //build version
 def build_versions = [:]
 build_versions.minSdk = 21
-build_versions.targetSdk = 33
+build_versions.targetSdk = 29
 build_versions.compileSdk = 33
-build_versions.buildTools = "33.0.0"
+//build_versions.buildTools = "33.0.0"
 ext.build_versions = build_versions
 
 ext.deps = [:]

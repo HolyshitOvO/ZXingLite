@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.library'
-    id 'com.vanniktech.maven.publish'
+//    id 'com.vanniktech.maven.publish'
 }
 
 android {
@@ -22,11 +22,11 @@ android {
         }
     }
 
-    compileOptions {
-        coreLibraryDesugaringEnabled true
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
-    }
+//    compileOptions {
+//        coreLibraryDesugaringEnabled true
+//        sourceCompatibility JavaVersion.VERSION_11
+//        targetCompatibility JavaVersion.VERSION_11
+//    }
 
     lintOptions {
         abortOnError false

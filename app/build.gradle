@@ -28,11 +28,11 @@ android {
         abortOnError false
     }
 
-    compileOptions {
-        coreLibraryDesugaringEnabled true
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
-    }
+//    compileOptions {
+//        coreLibraryDesugaringEnabled true
+//        sourceCompatibility JavaVersion.VERSION_11
+//        targetCompatibility JavaVersion.VERSION_11
+//    }
 }
 
 dependencies {
