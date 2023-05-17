@@ -214,47 +214,38 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
 
     public void onClick(View v){
         isContinuousScan = false;
-        switch (v.getId()){
-            case R.id.btn0:
-                this.cls = CaptureActivity.class;
-                this.title = ((Button)v).getText().toString();
-                checkCameraPermissions();
-                break;
-            case R.id.btn1:
-                this.cls = CustomCaptureActivity.class;
-                this.title = ((Button)v).getText().toString();
-                isContinuousScan = true;
-                checkCameraPermissions();
-                break;
-            case R.id.btn2:
-                this.cls = CaptureFragmentActivity.class;
-                this.title = ((Button)v).getText().toString();
-                checkCameraPermissions();
-                break;
-            case R.id.btn3:
-                this.cls = EasyCaptureActivity.class;
-                this.title = ((Button)v).getText().toString();
-                checkCameraPermissions();
-                break;
-            case R.id.btn4:
-                this.cls = CustomFullScanActivity.class;
-                this.title = ((Button)v).getText().toString();
-                checkCameraPermissions();
-                break;
-            case R.id.btn5:
-                startCode(false);
-                break;
-            case R.id.btn6:
-                startCode(true);
-                break;
-            case R.id.btn7:
-                checkExternalStoragePermissions();
-                break;
-            case R.id.btn8:
-                this.cls = QRCodeActivity.class;
-                this.title = ((Button)v).getText().toString();
-                checkCameraPermissions();
-                break;
+        int id = v.getId();
+        if (id == R.id.btn0) {
+            this.cls = CaptureActivity.class;
+            this.title = ((Button) v).getText().toString();
+            checkCameraPermissions();
+        } else if (id == R.id.btn1) {
+            this.cls = CustomCaptureActivity.class;
+            this.title = ((Button) v).getText().toString();
+            isContinuousScan = true;
+            checkCameraPermissions();
+        } else if (id == R.id.btn2) {
+            this.cls = CaptureFragmentActivity.class;
+            this.title = ((Button) v).getText().toString();
+            checkCameraPermissions();
+        } else if (id == R.id.btn3) {
+            this.cls = EasyCaptureActivity.class;
+            this.title = ((Button) v).getText().toString();
+            checkCameraPermissions();
+        } else if (id == R.id.btn4) {
+            this.cls = CustomFullScanActivity.class;
+            this.title = ((Button) v).getText().toString();
+            checkCameraPermissions();
+        } else if (id == R.id.btn5) {
+            startCode(false);
+        } else if (id == R.id.btn6) {
+            startCode(true);
+        } else if (id == R.id.btn7) {
+            checkExternalStoragePermissions();
+        } else if (id == R.id.btn8) {
+            this.cls = QRCodeActivity.class;
+            this.title = ((Button) v).getText().toString();
+            checkCameraPermissions();
         }
 
     }
