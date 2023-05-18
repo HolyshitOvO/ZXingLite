@@ -40,6 +40,11 @@
 			android:theme="@style/CaptureTheme" />
 
 		<activity
+			android:name=".CustomCaptureActivity2"
+			android:screenOrientation="landscape"
+			android:theme="@style/CaptureTheme" />
+
+		<activity
 			android:name=".CaptureFragmentActivity"
 			android:screenOrientation="portrait"
 			android:theme="@style/CaptureTheme" />

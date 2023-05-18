@@ -246,6 +246,10 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
             this.cls = QRCodeActivity.class;
             this.title = ((Button) v).getText().toString();
             checkCameraPermissions();
+        } else if (id == R.id.btn9) {
+            this.cls = CustomCaptureActivity2.class;
+            this.title = ((Button) v).getText().toString();
+            checkCameraPermissions();
         }
 
     }
